@@ -1,0 +1,17 @@
+<mvc:View
+        controllerName="sap.ui.components.controller.MainMenu"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true">
+    <App class="myAppDemoWT">
+        <pages>
+            <Page title="Hola Mundo">
+                <headerContent>
+                    <Button
+                            icon="sap-icon://hello-world"
+                            press="onOpenDialog"/>
+                </headerContent>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
