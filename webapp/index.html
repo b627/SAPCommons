@@ -11,7 +11,16 @@
             data-sap-ui-libs="sap.m"
             data-sap-ui-compatVersion="edge"
             data-sap-ui-preload="async"
-            >
+            data-sap-ui-resourceroots='{
+			"sap.components.custom": "./"
+		}'>
+    </script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+                name : "sap.components.custom"
+            }).placeAt("content");
+        });
     </script>
 </head>
 <body class="sapUiBody" id="content">
