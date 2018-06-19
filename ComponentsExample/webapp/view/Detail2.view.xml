@@ -1,0 +1,19 @@
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	controllerName="sap.components.custom.controller.Detail2">
+	<Page>
+		<content>
+			<f:SimpleForm title="DETAIL 2">
+				<f:content>
+					<Label text="Prduct ID"/>
+					<Label text="Prduct Name"/>
+				</f:content>
+			</f:SimpleForm>
+			<layout:VerticalLayout class="sapUiContentPadding">
+				<Text text="Static Routesaaaaaaaaaaaaaaaa:" />
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</View>

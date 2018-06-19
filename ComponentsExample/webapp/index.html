@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+
+    <title>SAP Commons components</title>
+
+    <script id="sap-ui-bootstrap"
+            src="../../resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m, sap.ui.core"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-preload="async"
+            data-sap-ui-resourceroots='{"sap.components.custom": "./"}'>
+    </script>
+
+    <script>
+        sap.ui.getCore().attachInit(function() {
+            sap.ui.require([
+                "sap/m/Shell",
+                "sap/ui/core/ComponentContainer"
+            ], function (Shell, ComponentContainer) {
+                new Shell({
+                    app: new ComponentContainer({
+                        height: "100%",
+                        name : "sap.components.custom"
+                    })
+                }).placeAt("content");
+            });
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="content"></body>
+
+</html>

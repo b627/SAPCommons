@@ -1,0 +1,15 @@
+<mvc:View controllerName="sap.components.custom.controller.Master"
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc"
+		  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Page id="master" title="Master 1">
+		<content>
+			<List itemPress="onListItemPress" mode="SingleSelectMaster" selectionChange="onSelectionChange">
+				<items>
+					<StandardListItem title="To Detail 1" info="detail1" type="Active" press="onSelectionChange"/>
+					<StandardListItem title="To Detail 2" info="detail2" type="Active" press="onSelectionChange"/>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

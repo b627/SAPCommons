@@ -51,6 +51,10 @@
                 "settings": {
                     "bundleName": "sap.components.custom.i18n.i18n"
                 }
+            },
+            "data": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "controller/data.json"
             }
         }
     }
